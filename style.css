@@ -385,32 +385,67 @@ footer {
 /* -----------------format tablette--------------------------------------------------- */
 @media screen and (max-width: 768px) {
   header {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    border-bottom: 5px solid#f2f2f2;
+    height: auto;
   }
-  .wrapper {
-   
+  .slogan p {
+    margin: 12px 0px;
   }
+  .feed h2 {
+    margin: -10px 0;
+  }
+  .main {
+    padding: 30px;
+  }
+  .slogan {
+    padding: 30px;
+  }
+  .form_search {
+    justify-content: center;
+  }
+  .filt {
+    justify-content: center;
+  }
+  .titre_droite {
+    margin: 5px 5px;
+  }
+
   .top-part {
-    
+    flex-direction: column;
   }
 
   .gauche {
+    width: 100%;
+    margin: 10px auto;
+  }
+  .gauche h3 {
+    margin-top: -5px;
+  }
+  .container {
+    flex-direction: row;
+  }
 
-  }
-  .gauche .image {
-  
-  }
   .droite {
-  
+    display: block;
+    width: 100%;
+    margin: 0;
+    background: none;
   }
-  .bas {
- 
+  .droite .image {
+    margin: 10px auto;
   }
-  .colonn {
- 
+
+  .col {
+    padding: 5px 0px;
+    font-size: 15px;
   }
   .contenu_footer {
+    display: inline-table;
+  }
+  ul h3 {
+    margin: 10px 0px;
   }
 }
 /* -----------------format mobile------------------------------------------------------- */
@@ -423,14 +458,14 @@ footer {
   header .nav {
     display: flex;
     width: 100%;
-    border-bottom: 2px transparent solid;
+    /* border-bottom: 2px transparent solid; */
   }
   header .nav a {
     width: 50%;
     justify-content: center;
     height: 50px;
     border-top: 4px solid transparent;
-    border-bottom: 4px solid #f2f2f2;
+    /* border-bottom: 4px solid #f2f2f2; */
   }
   header .nav a:hover {
     border-top: 4px solid transparent;
@@ -476,12 +511,16 @@ footer {
   .top-part {
     flex-direction: column-reverse;
   }
+  .feed :nth-of-type(div){
+    padding: 0px 0px;
+  }
 
   .colonn {
     margin: auto;
     width: 100%;
   }
   .contenu_footer {
+    margin: 0px 30px;
     display: block;
     align-self: center;
   }
@@ -527,7 +566,7 @@ footer {
   }
 
   .contenu_footer {
-    margin: 0;
+    margin: 0px 30px;
     padding: 50px 10px;
     width: 100%;
   }
